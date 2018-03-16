@@ -1,0 +1,32 @@
+{
+    "name": "microbase.tk",
+    "version": "0.0.1",
+    "license": "MIT",
+    "author": {
+        "name": "Francesco Bianco",
+        "email": "bianco@javanile.org"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/krudochess/microbase.tk.git"
+    },
+    "scripts": {
+        "watch-doc": "yamlinc --watch spectacle -t doc/www -d doc/src/microbase.yml ",
+        "test": "mocha --reporter spec --recursive | sed '/^\\s*$/d'",
+        "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec --recursive"
+    },
+    "devDependencies": {
+        "chai": "^3.5.0",
+        "chai-fs": "^1.0.0",
+        "mocha": "^3.2.0",
+        "spectacle-docs": "^0.9.13"
+    },
+    "dependencies": {
+        "chokidar": "^1.6.1",
+        "colors": "^1.1.2",
+        "cuid": "^2.1.0",
+        "deepmerge": "^2.0.1",
+        "js-yaml": "^3.10.0",
+        "object.values": "^1.0.4"
+    }
+}

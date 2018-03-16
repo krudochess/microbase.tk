@@ -1,0 +1,50 @@
+## --------------------
+## DON'T EDIT THIS FILE
+## --------------------
+## Engine: yamlinc@0.0.64
+## Source: doc/src/microbase.yml
+
+swagger: '3.0'
+info:
+  title: Microbase.tk
+  description: null
+  contact:
+    name: Francesco Bianco
+    email: bianco@javanile.org
+    url: 'https://microbase.tk/'
+  license:
+    name: MIT License
+    url: 'https://microbase.tk/'
+  version: 1.0.0
+host: microbase.tk
+basePath: /api/v1
+schemes:
+  - http
+  - https
+produces:
+  - application/json
+tags:
+  - name: Authentication
+    description: Authentication
+  - name: Database
+    description: Database
+paths:
+  /database:
+    get:
+      summary: list
+      description: list
+      tags:
+        - Database
+      responses:
+        '200':
+          ciao: null
+    delete:
+      summary: delete
+      description: list
+      tags:
+        - Database
+      responses:
+        '200':
+          ciao: null
+definitions:
+  database: null

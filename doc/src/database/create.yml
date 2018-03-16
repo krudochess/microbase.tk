@@ -1,0 +1,15 @@
+
+paths:
+  /database:
+    get:
+      summary: list
+      description: list
+      tags:
+        - Database
+      responses:
+        200:
+          ciao:
+
+definitions:
+  database:
+

@@ -1,0 +1,37 @@
+##
+## Microbase.tk
+##
+swagger: '3.0'
+
+info:
+  title: Microbase.tk
+  description:
+  contact:
+    name: Francesco Bianco
+    email: bianco@javanile.org
+    url: https://microbase.tk/
+  license:
+    name: MIT License
+    url: https://microbase.tk/
+  version: 1.0.0
+
+host: microbase.tk
+
+basePath: /api/v1
+
+schemes:
+  - http
+  - https
+
+produces:
+  - application/json
+
+tags:
+  - name: Authentication
+    description: Authentication
+  - name: Database
+    description: Database
+
+$include:
+  - database/create.yml
+  - database/delete.yml
