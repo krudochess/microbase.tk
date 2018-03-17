@@ -1,0 +1,51 @@
+<form class="form-horizontal formtastic session" novalidate="novalidate" action="https://chessmicrobase.com/sessions" accept-charset="UTF-8"
+      method="post">
+    <input name="utf8" type="hidden" value="✓">
+    <input type="hidden" name="authenticity_token"
+           value="IwdRo35uFJ4pQIhg6rsMhul8XCeg32VY/oaUSqayRAaLHKapJtP5Z2VbuJByBSThWm2RhS1kobYfnP7lAD5eiQ==">
+
+    <fieldset class="inputs">
+
+        <div class="email input required stringish control-group" id="session_email_input">
+            <label for="session_email"
+                   class="control-label">
+                Email<abbr
+                    title="required">
+                *</abbr>
+            </label>
+
+            <div class="controls">
+                <input id="session_email" autocorrect="off" type="email" name="session[email]">
+
+
+            </div>
+
+        </div>
+
+        <div class="password input required stringish control-group" id="session_password_input">
+            <label
+                    for="session_password" class="control-label">
+                Password<abbr title="required">
+                *</abbr>
+            </label>
+
+            <div class="controls">
+                <input id="session_password" type="password" name="session[password]">
+
+                <span class="help-block">
+<a href="/users/recover_password">
+Forgot it?</a>
+</span>
+
+            </div>
+
+        </div>
+
+    </fieldset>
+
+    <fieldset class="form-actions">
+        <input type="submit" name="commit" value="Sign In" class="btn"
+               data-disable-with="Sign In">
+    </fieldset>
+
+</form>

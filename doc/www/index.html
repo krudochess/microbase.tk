@@ -28,15 +28,18 @@
             <a href="#tag-Database">Database</a>
             <ul>
               <li>
-                <a href="#operation--database-get"> list </a>
+                <a href="#operation--database-post"> Create </a>
               </li>
               <li>
-                <a href="#operation--database-delete"> delete </a>
+                <a href="#operation--database-get"> List </a>
+              </li>
+              <li>
+                <a href="#operation--database--id--delete"> Delete </a>
               </li>
             </ul>
           </section>
           <h5>Schema Definitions</h5>
-          <a href="#definition-database"> database </a>
+          <a href="#definition-Database"> Database </a>
         </nav>
       </div>
       <div id="docs" class="row collapse expanded drawer" data-drawer>
@@ -63,7 +66,7 @@
                     <span>application/json</span>
                   </h5>
                   <h5>Schemes:
-                    <span>http, https</span>
+                    <span>https</span>
                   </h5>
                   <h5>Version:
                     <span>1.0.0</span>
@@ -84,6 +87,51 @@
               <p>Database</p>
             </div>
           </div>
+          <div id="operation--database-post" class="operation panel" data-traverse-target="operation--database-post">
+            <!-- <section class="operation-tags row"> -->
+            <!-- <div class="doc-copy"> -->
+            <div class="operation-tags">
+              <a class="label" href="#tag-Database">Database</a>
+              <!---->
+            </div>
+            <!-- </div> -->
+            <!-- </section> -->
+            <h2 class="operation-title">
+              <span class="operation-summary">Create</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">POST</span>
+                  <span class="operation-path">/database</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Create a new empty database</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value"> undefined </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"> </div>
+            </div>
+          </div>
           <div id="operation--database-get" class="operation panel" data-traverse-target="operation--database-get">
             <!-- <section class="operation-tags row"> -->
             <!-- <div class="doc-copy"> -->
@@ -94,7 +142,7 @@
             <!-- </div> -->
             <!-- </section> -->
             <h2 class="operation-title">
-              <span class="operation-summary">list</span>
+              <span class="operation-summary">List</span>
             </h2>
             <div class="doc-row">
               <div class="doc-copy">
@@ -129,7 +177,7 @@
               <div class="doc-examples"> </div>
             </div>
           </div>
-          <div id="operation--database-delete" class="operation panel" data-traverse-target="operation--database-delete">
+          <div id="operation--database--id--delete" class="operation panel" data-traverse-target="operation--database--id--delete">
             <!-- <section class="operation-tags row"> -->
             <!-- <div class="doc-copy"> -->
             <div class="operation-tags">
@@ -139,13 +187,13 @@
             <!-- </div> -->
             <!-- </section> -->
             <h2 class="operation-title">
-              <span class="operation-summary">delete</span>
+              <span class="operation-summary">Delete</span>
             </h2>
             <div class="doc-row">
               <div class="doc-copy">
                 <section class="swagger-operation-path">
                   <span class="operation-method">DELETE</span>
-                  <span class="operation-path">/database</span>
+                  <span class="operation-path">/database/{id}</span>
                 </section>
               </div>
             </div>
@@ -175,9 +223,9 @@
             </div>
           </div>
           <h1>Schema Definitions</h1>
-          <div id="definition-database" class="definition panel" data-traverse-target="definition-database">
+          <div id="definition-Database" class="definition panel" data-traverse-target="definition-Database">
             <h2 class="panel-title">
-              <a name="/definitions/database"></a>database:
+              <a name="/definitions/Database"></a>Database:
               <!-- <span class="json-property-type"><span class="json-property-type">object</span>
               <span class="json-property-range" title="Value limits"></span>
               

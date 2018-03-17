@@ -59,3 +59,7 @@ typings/
 
 # PhpStorm
 .idea/
+
+# Microbase.tk
+store/*
+!store/session/.gitkeep

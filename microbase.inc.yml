@@ -19,7 +19,6 @@ info:
 host: microbase.tk
 basePath: /api/v1
 schemes:
-  - http
   - https
 produces:
   - application/json
@@ -30,16 +29,25 @@ tags:
     description: Database
 paths:
   /database:
+    post:
+      summary: Create
+      description: Create a new empty database
+      tags:
+        - Database
+      responses:
+        '200':
+          ciao: null
     get:
-      summary: list
+      summary: List
       description: list
       tags:
         - Database
       responses:
         '200':
           ciao: null
+  '/database/{id}':
     delete:
-      summary: delete
+      summary: Delete
       description: list
       tags:
         - Database
@@ -47,4 +55,4 @@ paths:
         '200':
           ciao: null
 definitions:
-  database: null
+  Database: null

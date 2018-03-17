@@ -1,8 +1,8 @@
 
 paths:
-  /database/{id}:
-    delete:
-      summary: Delete
+  /database:
+    get:
+      summary: List
       description: list
       tags:
         - Database
@@ -12,3 +12,4 @@ paths:
 
 definitions:
   Database:
+

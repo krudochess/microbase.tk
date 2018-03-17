@@ -12,6 +12,7 @@
     },
     "scripts": {
         "watch-doc": "yamlinc --watch spectacle -t doc/www -d doc/src/microbase.yml ",
+        "tdd": "mocha --reporter spec",
         "test": "mocha --reporter spec --recursive | sed '/^\\s*$/d'",
         "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec --recursive"
     },
@@ -25,8 +26,12 @@
         "chokidar": "^1.6.1",
         "colors": "^1.1.2",
         "cuid": "^2.1.0",
-        "deepmerge": "^2.0.1",
+        "dotenv": "^5.0.1",
+        "express": "^4.16.3",
         "js-yaml": "^3.10.0",
-        "object.values": "^1.0.4"
+        "jsdom": "^11.6.2",
+        "md5": "^2.2.1",
+        "tough-cookie-file-store": "^1.2.0",
+        "uuid": "^3.2.1"
     }
 }

@@ -20,7 +20,6 @@ host: microbase.tk
 basePath: /api/v1
 
 schemes:
-  - http
   - https
 
 produces:
@@ -35,3 +34,4 @@ tags:
 $include:
   - database/create.yml
   - database/delete.yml
+  - database/list.yml

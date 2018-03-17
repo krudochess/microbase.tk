@@ -1,9 +1,9 @@
 
 paths:
   /database:
-    get:
-      summary: list
-      description: list
+    post:
+      summary: Create
+      description: Create a new empty database
       tags:
         - Database
       responses:
@@ -11,5 +11,5 @@ paths:
           ciao:
 
 definitions:
-  database:
+  Database:
 
